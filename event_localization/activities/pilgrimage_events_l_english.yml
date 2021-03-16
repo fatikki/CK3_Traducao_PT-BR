@@ -78,7 +78,9 @@
  pilgrimage.2004.b:0 "An auspicious meeting, but I must pray in solitude."
 
  pilgrimage.2005.t:0 "$pilgrimage_header$ A Rude Story"
- pilgrimage.2005.desc:0 "Passing by the campfire, one of my fellow travelers is telling a story [dummy_peasant_gender.GetSheHe] once heard about some [ROOT.Char.GetTitleAsNameNoTooltip], to raucous laughter. They all fall silent when I approach — except for the storyteller.\n\n"Ah, don't worry, m'[ROOT.Char.GetLadyLord], you're nothing like the [ROOT.Char.Custom('InsultNoun')] in this story! It's about the [ROOT.Char.GetTitleAsNameNoTooltip] of some far away place called [title.GetNameNoTierNoTooltip].""
+ pilgrimage.2005.desc:1 "Passing by the campfire, one of my fellow travelers is telling a story [dummy_peasant_gender.GetSheHe] once heard about some [ROOT.Char.GetTitleAsNameNoTooltip], to raucous laughter. They all fall silent when I approach — except for the storyteller.\n\n"Ah, don't worry, m'[ROOT.Char.GetLadyLord], you're nothing like the [ROOT.Char.Custom('InsultNoun')] in this story!"
+ pilgrimage.2005.desc_close:0 "It's about the [ROOT.Char.GetTitleAsNameNoTooltip] of these lands.""
+ pilgrimage.2005.desc_far:0 "It's about the [ROOT.Char.GetTitleAsNameNoTooltip] of some far away place called [title.GetNameNoTierNoTooltip].""
  pilgrimage.2005.a:0 ""Really, now? Tell me more of this [ROOT.Char.GetTitleAsNameNoTooltip].""
  pilgrimage.2005.a.flavor:0 "I take a seat by the fire."
  pilgrimage.2005.b:0 ""Guards! Fetch my whip.""

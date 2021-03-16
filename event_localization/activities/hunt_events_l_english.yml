@@ -89,7 +89,7 @@
  hunt.4002.desc:1 "The noise from the others have faded away by the time [ROOT.Char.Custom2('RelationToMe', SCOPE.sC('secret_sharer'))] [secret_sharer.GetTitledFirstName] and I stalk up on the [ROOT.Char.Custom('LocalAnimal')].\n\nWe are almost within striking distance when [secret_sharer.GetFirstNameNoTooltip] whispers to me. "Now that we are finally by ourselves, there is something I have to let you know about [secret_owner.GetTitledFirstName]...""
  hunt.4002.a:0 "No time for chit-chat, I'm getting that [ROOT.Char.Custom('LocalAnimal')]!"
  hunt.4002.b:0 "What? Tell me more..."
- hunt.4002.b.tt:0 "The [THIS.Char.Custom('LocalAnimal')] gets away."
+ hunt.4002.b.tt:1 "The [ROOT.Char.Custom('LocalAnimal')] gets away."
  hunt.4002.b.reveal:0 "I learn [secret_owner.GetFirstNamePossessiveNoTooltip] secret"
 
  hunt.4003.t:1 "$hunt_header$ Illegal Prey"

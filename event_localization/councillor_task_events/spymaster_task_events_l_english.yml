@@ -85,9 +85,9 @@
  spymaster_task.0359.a:0 "Very interesting..."
 
  spymaster_task.0381.opening:0 "[councillor.Custom2('AppropriateGreetingPositive', SCOPE.sC('councillor_liege'))]"
- spymaster_task.0381.desc_your_court:0 "In my work at your court,"
- spymaster_task.0381.desc_other_court:0 "In my work at the court of [target_character.GetTitledFirstName],"
- spymaster_task.0381.desc:1 "I have failed to find any secrets [character_to_hook.Custom2('HerHisCharacterIntroduction', target_character)] might possess.\n\nHowever, the truth does not have to stop us. It would be simple to make sure that [character_to_hook.GetFirstNameNoTooltip] suddenly #EMP did#! have secrets [character_to_hook.GetSheHe] would not want to get out."
+ spymaster_task.0381.desc_your_court:1 "In my work at your court, I have failed to find any secrets [character_to_hook.Custom2('YourCharacterIntroduction', target_character)] might possess."
+ spymaster_task.0381.desc_other_court:1 "In my work at the court of [target_character.GetTitledFirstName], I have failed to find any secrets [character_to_hook.Custom2('HerHisCharacterIntroduction', target_character)] might possess."
+ spymaster_task.0381.desc:2 "\n\nHowever, the truth does not have to stop us. It would be simple to make sure that [character_to_hook.GetFirstNameNoTooltip] suddenly #EMP did#! have secrets [character_to_hook.GetSheHe] would not want to get out."
  spymaster_task.0381.a:0 "See it done."
  spymaster_task.0381.a.truth_is_relative_unlock:0 "This option is available because I have the [GetPerk('truth_is_relative_perk').GetName(GetPlayer)] Perk"
  spymaster_task.0381.b:0 "There is no reason we should not be friends instead."
