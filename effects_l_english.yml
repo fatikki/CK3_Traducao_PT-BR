@@ -58,6 +58,7 @@
  REMOVE_HOOK_EFFECT:0 "Loses a $TYPE$ [hook|E] on [TARGET_CHARACTER.GetShortUIName]"
  REMOVE_HOOK_EFFECT_THIRD:0 "[CHARACTER.GetShortUIName|U] loses a $TYPE$ [hook|E] on [TARGET_CHARACTER.GetShortUIName]"
  REMOVE_HOOK_EFFECT_FIRST:2 "You lose your $TYPE$ [hook|E] on [TARGET_CHARACTER.GetShortUIName]"
+ REMOVED_HOOK_EFFECT_FIRST:0 "You lost your $TYPE$ [hook|E] on [TARGET_CHARACTER.GetShortUIName]"
  
  USE_HOOK_EFFECT:1 "Uses Weak [hook|E] ($TYPE$) on [TARGET_CHARACTER.GetShortUIName]"
  USE_HOOK_EFFECT_THIRD:0 "[CHARACTER.GetShortUIName|U] uses [CHARACTER.GetHerHis] Weak [hook|E] ($TYPE$) on [TARGET_CHARACTER.GetShortUIName]"
@@ -253,8 +254,9 @@
 
  custom_tooltip_test:0 "I'm a custom tooltip in the scope of [ROOT.GetCharacter.GetShortUIName]."
  all_courtiers_and_guests:1 "All [courtiers|E] and [guests|E] of [ROOT.GetCharacter.GetShortUIName]"
- all_close_family_members:0 "All  [close_family_members|E] of [THIS.GetCharacter.GetShortUIName]"
+ all_close_family_members:0 "All [close_family_members|E] of [THIS.GetCharacter.GetShortUIName]"
  all_family_members:0 "All [family_members|E] of [THIS.GetCharacter.GetShortUIName]"
+ all_unlanded_family_members:0 "All $game_concept_unlanded$ [family_members|E] of [THIS.GetCharacter.GetShortUIName]"
  all_close_family_and_spouses:0 "All [close_family_members|E] and [spouse|E] of [THIS.GetCharacter.GetShortUIName]"
  all_your_guests:0 "All your [guests|E]"
  all_close_family_members_of_kicked_characters:0 "All their [close_family_members|E]"
@@ -488,7 +490,7 @@
  I_STRESS_IMPACT_GAIN:1 "You $ONLY$gain [stress_gain_i]$VALUE|-0$ [stress|E] $TRAITS$"
  I_STRESS_IMPACT_LOSS:1 "You $ONLY$lose [stress_loss_i]$VALUE|+0$ [stress|E] $TRAITS$"
  I_PAST_STRESS_IMPACT_GAIN:1 "You $ONLY$gained [stress_gain_i]$VALUE|-0$ [stress|E] $TRAITS$"
- I_PAST_STRESS_IMPACT_LOSS:1 "You $ONLY$lost  [stress_loss_i]$VALUE|+0$ [stress|E] $TRAITS$"
+ I_PAST_STRESS_IMPACT_LOSS:1 "You $ONLY$lost [stress_loss_i]$VALUE|+0$ [stress|E] $TRAITS$"
  THEY_PAST_STRESS_IMPACT_GAIN:0 "[CHARACTER.GetShortUIName|U] $ONLY$gained [stress_gain_i]$VALUE|V0$ [stress|E] $TRAITS$"
  THEY_PAST_STRESS_IMPACT_LOSS:0 "[CHARACTER.GetShortUIName|U] $ONLY$lost [stress_loss_i]$VALUE|V0$ [stress|E] $TRAITS$"
  
@@ -508,9 +510,9 @@
  STRESS_IMPACT_ONLY:0 "only "
  STRESS_IMPACT_INCREASED:0 ""
 
- RETURN_TO_COURT_EFFECT:0 "Returns to the [lieges|E] court"
- I_RETURN_TO_COURT_EFFECT:1 "You return to your [lieges|E] court"
- THEY_RETURN_TO_COURT_EFFECT:0 "[CHARACTER.GetUIName] returns to [CHARACTER.GetHerHis] [lieges|E] court"
+ RETURN_TO_COURT_EFFECT:2 "Returns to the [liege|E]'s [court|E]"
+ I_RETURN_TO_COURT_EFFECT:2 "You return to your [liege|E]'s [court|E]"
+ THEY_RETURN_TO_COURT_EFFECT:1 "[CHARACTER.GetUIName] returns to [CHARACTER.GetHerHis] [liege|E]'s [court|E]"
 
  RETURNED_TO_COURT_EFFECT:0 "Returned to the employer's court"
  I_RETURNED_TO_COURT_EFFECT:1 "You returned to your employer's court"
@@ -549,7 +551,7 @@
  THEY_GAIN_POTENTIAL_FRIEND:0 "[CHARACTER.GetShortUIName|U] grows closer to forming a friendship with [TARGET_CHARACTER.GetShortUIName]"
  THEY_GAINED_POTENTIAL_FRIEND:0 "[CHARACTER.GetShortUIName|U] grew closer to forming a friendship with [TARGET_CHARACTER.GetShortUIName]"
  GAINS_POTENTIAL_FRIEND:0 "Grows closer to forming a friendship with [TARGET_CHARACTER.GetShortUIName]"
- I_LOSE_POTENTIAL_FRIEND:1 "You and [TARGET_CHARACTER.GetShortUIName] and are no longer close"
+ I_LOSE_POTENTIAL_FRIEND:2 "You and [TARGET_CHARACTER.GetShortUIName] are no longer close"
 
  I_GAIN_POTENTIAL_LOVER:1 "You grow closer to forming an intimate relationship with [TARGET_CHARACTER.GetShortUIName]"
  I_GOT_POTENTIAL_LOVER:1 "You grew closer to forming an intimate relationship with [TARGET_CHARACTER.GetShortUIName]"
@@ -715,9 +717,9 @@
  THEY_GAIN_PIETY_LEVEL_EFFECT:0 "[CHARACTER.GetShortUIName|U] gain $VALUE|V0$ [piety_levels|E]"
  THEY_LOSE_PIETY_LEVEL_EFFECT:0 "[CHARACTER.GetShortUIName|U] loses $VALUE|V0$ [piety_levels|E]"
  
- BREAKING_TRUCE:0 "Breaks the [truce|E]:"
+ BREAKING_TRUCE:1 "\n#S Breaking the [truce|E]#!"
  
- ATTACKING_ALLY:0 "Attacks an [ally|E]:"
+ ATTACKING_ALLY:1 "\n#S Attacking an [ally|E]#!"
  
  SET_CULTURE_GLOBAL:1 "Adopts the [TARGET_CULTURE.GetName|V] Culture"
  SET_CULTURE_FIRST:2 "You adopt the [TARGET_CULTURE.GetName|V] Culture"
@@ -1256,6 +1258,8 @@
  DYNASTY_LOSES_PRESTIGE_EFFECT:1 "[dynasty|E] [DYNASTY.GetBaseName] loses [dynasty_prestige_i]$VALUE|-0$ [dynasty_prestige|E]"
  DYNAST_GAINED_PRESTIGE_EFFECT:1 "[dynasty|E] [DYNASTY.GetBaseName] gained [dynasty_prestige_i]$VALUE|+0$ [dynasty_prestige|E]"
  DYNAST_LOST_PRESTIGE_EFFECT:1 "[dynasty|E] [DYNASTY.GetBaseName] lost [dynasty_prestige_i]$VALUE|-0$ [dynasty_prestige|E]"
+ DYNASTY_GAINED_PRESTIGE_GLOBAL_EFFECT:0 "Gains [dynasty_prestige_i]$VALUE|+0$ [dynasty_prestige|E]"
+ DYNASTY_LOST_PRESTIGE_GLOBAL_EFFECT:0 "Lost [dynasty_prestige_i]$VALUE|-0$ [dynasty_prestige|E]"
 
  THEOCRACY_APPROVE_EFFECT:1 "Starts endorsing you #weak ([church_property|E])#!"
  THEOCRACY_DISAPPROVE_EFFECT:1 "@warning_icon!#X Stops endorsing you#! #weak ([church_property|E])#!"
@@ -1390,8 +1394,9 @@
  ADD_TITLE_LAW:1 "[TITLE.GetName|U] will gain [LAW.GetName|V] succession"
  ADDED_TITLE_LAW:0 "[TITLE.GetName|U] gained [LAW.GetName|V] succession"
 
- leave_faction_with_cooldown_effect_third.tt:1 "Will not join another [faction|E] for #V $VALUE|0$ years#!"
+ leave_faction_with_cooldown_effect_third.tt:2 "[CHARACTER.GetShortUIName] cannot join another [faction|E] for #V $VALUE|0$ years#!"
  leave_faction_with_cooldown_effect_first.tt:2 "You cannot join another [faction|E] for #V $VALUE|0$ years#!"
+ leave_faction_with_cooldown_effect_global.tt:0 "Cannot join another [faction|E] for #V $VALUE|0$ years#!"
 
  LEAVES_COURT:0 "Leaves [CHARACTER.GetLiege.GetShortUINamePossessive] [court|E]"
  CHARACTER_LEAVES_COURT:0 "[CHARACTER.GetShortUIName|U] leaves [CHARACTER.GetLiege.GetShortUINamePossessive] [court|E]"
@@ -1571,7 +1576,7 @@
  
  PERK_TRUCE_BREAKING_COST_REDUCTION:0 "Shorter [truces|E] and no [prestige|E] penalty for breaking them"
 
- EACH_ALLIANCE_GRANTS_DIPLOMACY:0 "Each [alliance|E] grants: [diplomacy_i]#P +1#!"
+ EACH_ALLIANCE_GRANTS_DIPLOMACY:1 "Each [alliance|E] grants: [diplomacy_i]#P +1#! (To the Maximum of [EmptyScope.ScriptValue('embassies_max')|0])"
 
  FABRICATE_CLAIM_SPEED_GAIN:0 "[fabricate_claim|E] Speed: #P +[EmptyScope.ScriptValue('accomplished_forger_percentage')|0]%#!"
 
@@ -1592,9 +1597,9 @@
  
  FEWER_COMPLICATIONS_DURING_PREGNANCY:0 "Fewer complications during pregnancy"
 
- EACH_FRIEND_ADDS_RANDOM_SKILL_POINT:2 "Each of your [friend|E] Relations gives you #P 2#! random [skill|E] points"
+ EACH_FRIEND_ADDS_RANDOM_SKILL_POINT:3 "Each of your [friend|E] Relations gives you #P 2#! random [skill|E] points (To the Maximum of [EmptyScope.ScriptValue('friendly_counsel_max')|0]"
 
- EACH_LIVING_CHILD_ADDS_RANDOM_SKILL_POINT:1 "Each living child gives you #P 1#! random [skill|E] point"
+ EACH_LIVING_CHILD_ADDS_RANDOM_SKILL_POINT:3 "Each living child gives you #P 1#! random [skill|E] point (Maximum of [EmptyScope.ScriptValue('sound_foundations_max')|0])"
 
  OFFER_VASSALIZATION_ACCEPTANCE_INCREASE:0 "[offer_vassalization|E] Acceptance: #P +[EmptyScope.ScriptValue('true_ruler_value')|0]#!"
 
@@ -1622,7 +1627,7 @@
  I_WILL_RECEIVE_WARNING_OF_NATURAL_DEATH:1 "When [character_death_death|E] of natural causes is #V 1#! year away, you will receive a warning"
  THEY_WILL_RECEIVE_WARNING_OF_NATURAL_DEATH:0 "When [character_death_death|E] of natural causes is #V 1#! year away, [CHARACTER.GetShortUIName] will receive a warning"
 
- CONVERT_COUNTY_NO_NEGATIVE_FERVOR_MODIFIERS:2 "[convert_county|E]: The time it takes to convert a [county|E] is no longer increased if that a [faith|E] has higher [fervor|E] than your Faith"
+ CONVERT_COUNTY_NO_NEGATIVE_FERVOR_MODIFIERS:3 "[convert_county|E]: The time it takes to convert a [county|E] is no longer increased if that [faith|E] has higher [fervor|E] than your Faith"
 
  REDUCED_DISEASE_FREQUENCY_AT_COURT:0 "Reduced chance of contracting [illnesses|E]\nReduced chance for [courtiers|E] to contract [illnesses|E]"
 
@@ -1838,8 +1843,8 @@
  REMOVE_SPECIAL_CHARACTER_EFFECT:0 "[TARGET_CHARACTER.GetShortUINamePossessive] is removed as the special character"
  REMOVE_SPECIAL_CHARACTER_PAST_EFFECT:0 "[TARGET_CHARACTER.GetShortUINamePossessive] was removed as the special character"
  ALLOW_IN_SCHEME_PAST_EFFECT:0 "Is allowed to join the [SCHEME.GetName] as an agent"
- ADD_PERK_EFFECT:0 "Gain the [PERK.GetName('CHARACTER')] Perk"
- ADD_PERK_PAST_EFFECT:0 "Gained the [PERK.GetName('CHARACTER')] Perk"
+ ADD_PERK_EFFECT:1 "Gain the [PERK.GetName( CHARACTER.Self )] Perk"
+ ADD_PERK_PAST_EFFECT:1 "Gained the [PERK.GetName( CHARACTER.Self )] Perk"
  SET_GENERATED_ASEXUALITY_CHANCE_EFFECT:0 "The chance of generated characters being [asexual|E] becomes #V $VALUE$%#!"
  SET_GENERATED_ASEXUALITY_CHANCE_PAST_EFFECT:0 "The chance of generated characters being [asexual|E] is now #V $VALUE$%#!"
  CLEAR_FORCED_VOTE_EFFECT:0 "Becomes free to vote as they wish"

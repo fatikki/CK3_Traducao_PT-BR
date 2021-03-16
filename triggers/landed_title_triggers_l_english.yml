@@ -77,3 +77,9 @@
 
  CONSECRATE_BLOODLINE_ENOUGH_HOLY_SITES:1 "You control one or more [CHARACTER.GetFaith.GetAdjective] [holy_sites|E]"
  CONSECRATE_BLOODLINE_NOT_ENOUGH_HOLY_SITES:1 "You do #bold not#! control any of the [CHARACTER.GetFaith.GetAdjective] [holy_sites|E]"
+ 
+ HAS_REVOCABLE_LEASE_TRIGGER:0 "Has a revocable lease"
+ HAS_ORDER_OF_SUCCESSION_TRIGGER:0 "Has order of succession"
+ HAS_TITLE_LAW_FLAG_TRIGGER:0 "Has title law: $LAW$"
+ IS_TITULAR_TRIGGER:0 "Is [titular_title|E]"
+ FORM_GERMANIA_CHRISTIAN_TRIGGER:0 "As a [CHARACTER.GetFaith.GetAdjective] ruler you can reform the $e_hre$ instead"
