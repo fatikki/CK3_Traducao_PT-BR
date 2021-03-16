@@ -84,7 +84,7 @@
  FAITH_WINDOW_FAITH_NAME:0 "[Select_CString( StringIsEmpty( FaithCreationWindow.GetNewFaithName ), 'Choose Name', '' )] [FaithCreationWindow.GetNewFaithName]"
  FAITH_WINDOW_FAITH_NAME_TOOLTIP:0 "Enter a name for your new [faith|E] and its followers"
  FERVOR_MONTHLY_CHANGE:1 "Monthly [fervor|E] Change"
- FERVOR_TT:0 "#T Fervor: [Faith.GetFervor|0]%\n#!#weak The actual effects of a [faith|E]'s [fervor|E] is always relative to the Fervor of the opposing Faith. For example, when using the [convert_county|E] Task.#!\n\n[Faith.GetMonthlyFervorChangeDesc]"
+ FERVOR_TT:1 "#T Fervor: [Faith.GetFervor|2]%\n#!#weak The actual effects of a [faith|E]'s [fervor|E] is always relative to the Fervor of the opposing Faith. For example, when using the [convert_county|E] Task.#!\n\n[Faith.GetMonthlyFervorChangeDesc]"
 
  FAITH_DOCTRINES_IMPORTANT:0 "Main [doctrines|E]"
  FAITH_DOCTRINES_MARRIAGE:0 "Marriage Doctrines"

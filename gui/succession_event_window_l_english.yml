@@ -225,7 +225,7 @@
  SUCCESSION_EVENT_WINDOW_GAME_OVER_MEDIUM_SPLENDOR:0 "and it has turned into a noteworthy dynasty"
  SUCCESSION_EVENT_WINDOW_GAME_OVER_LOW_SPLENDOR:0 "but it has remained insignificant, leaving no lasting mark on history"
  SUCCESSION_EVENT_WINDOW_GAME_OVER_LOW_SPLENDOR_SHORT:0 "and it has remained insignificant, leaving no lasting mark on history"
- SUCCESSION_EVENT_WINDOW_GAME_OVER_MIN_SPLENDOR:0 "but it has remained obscure, unknown, and soon forgotten"
+ SUCCESSION_EVENT_WINDOW_GAME_OVER_MIN_SPLENDOR:1 "but it has remained obscure and will soon be forgotten"
 
 #########################################
  SUCCESSION_EVENT_WINDOW_DEAD_DESC:0 "[CHARACTER.Custom('DeathMessageIntro')] [CHARACTER.Custom('DeathMessageReason')] [CHARACTER.Custom('DeathMessageOutro')]"

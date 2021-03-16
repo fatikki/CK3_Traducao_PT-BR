@@ -1,6 +1,5 @@
 ﻿l_english:
- KILL_LIST:0 "Mortes de [KillListWindow.GetCharacter.GetUINamePossessive|U]"
- OPEN_KILL_LIST_TOOLTIP:0 "#I Clique para abrir a Lista de Morte#!"
- DEATH_DATE:0 "Data do óbito"
- DEATH_REASON:0 "Motivo da Morte"
-###MichaelBigaton 27/09/2020###
+ KILL_LIST:1 "[KillListWindow.GetCharacter.GetUINamePossessive|U] Kills"
+ OPEN_KILL_LIST_TOOLTIP:4 "#T View Kills\n#!View all Characters [Character.GetShortUINameNoTooltip] [Character.LocalPlayerString( 'have', 'has' )] killed, [Character.LocalPlayerString( 'if you want to reminisce...', 'that you know of...' )]"
+ DEATH_DATE:0 "Death Date"
+ DEATH_REASON:0 "Death Reason"
