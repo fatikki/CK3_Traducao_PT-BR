@@ -10,7 +10,9 @@
  FAITH_DESCRIPTION_HOSTILITY:0 "I consider them $HOSTILITY_CATEGORY|V$"
  FAITH_AND_RELIGION:0 "[FAITH.GetTextIcon][FAITH.GetName] - [FAITH.GetReligion.GetName]"
  CHARACTERS_OF_FAITH_MODIFIER:0 "#T All [FAITH.GetAdherentNamePlural]:#!"
+ CHARACTERS_OF_UNKNOWN_FAITH_MODIFIER:0 "#T All Adherents:#!"
  CLERGY_OF_FAITH_MODIFIER:0 "#T All [FAITH.GetAdjective] [clergy|E]:#!"
+ CLERGY_OF_UNKNOWN_FAITH_MODIFIER:0 "#T All Faith [clergy|E]:#!"
  CHARACTERS_OF_FAITH_HOLY_SITE_MODIFIER:0 "#S All [FAITH.GetAdherentNamePlural]:#!"
  DOCTRINE_ADD_VIRTUE:0 "$EFFECT_LIST_BULLET$Makes [TRAIT.GetName( GetPlayer )] a [virtue|E]\n"
  DOCTRINE_ADD_SIN:0 "$EFFECT_LIST_BULLET$Makes [TRAIT.GetName( GetPlayer )] a [sin|E]\n"
@@ -144,8 +146,12 @@
  holy_site_bahrein_effect_name:0 "From [holy_site|E] #weak ($holy_site_bahrein_name$)#!"
  holy_site_yamama_name:0 "Yamama"
  holy_site_yamama_effect_name:0 "From [holy_site|E] #weak ($holy_site_yamama_name$)#!"
- holy_site_mosul_name:0 "Mosul"
- holy_site_mosul_effect_name:0 "From [holy_site|E] #weak ($holy_site_mosul_name$)#!"
+ holy_site_sinjar_name:0 "Sinjar"
+ holy_site_sinjar_effect_name:0 "From [holy_site|E] #weak ($holy_site_sinjar_name$)#!"
+ holy_site_baalbek_name:0 "Baalbek"
+ holy_site_baalbek_effect_name:0 "From [holy_site|E] #weak ($holy_site_baalbek_name$)#!"
+ holy_site_lalish_name:0 "Lalish"
+ holy_site_lalish_effect_name:0 "From [holy_site|E] #weak ($holy_site_lalish_name$)#!"
  holy_site_nishapur_name:0 "Nishapur"
  holy_site_nishapur_effect_name:0 "From [holy_site|E] #weak ($holy_site_nishapur_name$)#!"
  holy_site_dashtestan_name:0 "Dashtestan"
@@ -346,6 +352,16 @@
  holy_site_tavan_bogd_name:0 "Tavan Bogd"
  holy_site_tavan_bogd_effect_name:0 "From [holy_site|E] #weak ($holy_site_tavan_bogd_name$)#!"
 
+ #Holy Sites: Siberian
+ holy_site_tyumen_name:0 "Tyumen"
+ holy_site_tyumen_effect_name:0 "From [holy_site|E] #weak ($holy_site_tyumen_name$)#!"
+ holy_site_surgut_name:0 "Surgut"
+ holy_site_surgut_effect_name:0 "From [holy_site|E] #weak ($holy_site_surgut_name$)#!"
+ holy_site_ob_name:0 "Ob"
+ holy_site_ob_effect_name:0 "From [holy_site|E] #weak ($holy_site_ob_name$)#!"
+ holy_site_olkhon_name:0 "Olkhon"
+ holy_site_olkhon_effect_name:0 "From [holy_site|E] #weak ($holy_site_olkhon_name$)#!"
+ 
  #Holy Sites: Hellenic
  holy_site_athens_name:0 "Athens"
  holy_site_athens_effect_name:0 "From [holy_site|E] #weak ($holy_site_athens_name$)#!"
@@ -554,6 +570,7 @@
  special_doctrine_ecumenical_christian_desc:0 "Our religious leaders have historically been engaged in inter-faith dialogs to increase cooperation amongst the different Christian denominations."
 
  special_doctrine_full_tolerance_name:0 "Full Tolerance"
+ full_tolerance_name:0 "$special_doctrine_full_tolerance_name$"
  doctrine_parameter_hostility_override_special_doctrine_full_tolerance:0 "All [faiths|E] are considered to be [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V]"
  special_doctrine_full_tolerance_desc:0 "Everyone is free to chose their own faith. Our differences do not divide us, they make us stronger."
  
@@ -588,7 +605,7 @@
  doctrine_bastardry_legitimization_desc:0 "Marriage is holy, so children born outside of it must be blessed in another way if they are to be considered legitimate."
  doctrine_bastardry_all_name:0 "No Legitimization"
  doctrine_bastardry_all_desc:0 "The bonds of marriage are sacrosanct, and children born outside of wedlock will always be illegitimate."
- doctrine_parameter_bastards_none:0 "There is no such thing as a [bastard|E]. all children are equally [legitimate|E]"
+ doctrine_parameter_bastards_none:0 "There is no such thing as a [bastard|E]. All children are equally [legitimate|E]"
  doctrine_parameter_bastards_legitimize:0 "[bastards|E] can be legitimized if their [house_head|E] or [dynast|E] approves"
  doctrine_parameter_bastards_always:0 "[bastards|E] can never be legitimized"
  
@@ -691,7 +708,7 @@
  doctrine_clerical_function_alms_and_pacification_name:0 "Alms and Pacification"
  doctrine_clerical_function_alms_and_pacification_desc:0 "Our [ROOT.Faith.PriestNeuterPlural] are entrusted with ensuring that the poor and downtrodden have sufficient food and shelter when they can not provide it for themselves."
  doctrine_clerical_function_recruitment_name:0 "Recruitment"
- doctrine_clerical_function_recruitment_desc:0 "Every able-bodied person has a duty to take up arms and defend our faith, and it is the responsibility of our [ROOT.Faith.PriestNeuterPlural] to remind everyone of this."
+ doctrine_clerical_function_recruitment_desc:1 "Our [ROOT.Faith.PriestNeuterPlural] can take up arms and defend our faith. The responsibility to lead as an example grants them extra strength in combat."
  doctrine_parameter_clergy_can_fight:0 "Members of the [clergy|E] can serve as [commanders|E] or $knight_culture_player_plural$"
  
  doctrine_clerical_gender_name:0 "Clerical Gender"
@@ -712,8 +729,6 @@
  doctrine_clerical_marriage_disallowed_name:0 "Disallowed"
  doctrine_clerical_marriage_disallowed_desc:0 "Becoming a [ROOT.Faith.PriestNeuter] means devoting one's life to [ROOT.Faith.HighGodName]. It is inherently unfaithful to consider taking a mortal spouse in addition to that."
  doctrine_parameter_clergy_can_marry_disabled:0 "Members of the [clergy|E] are forbidden from [marrying|E]"
-
-
  
  doctrine_clerical_succession_name:0 "Clerical Appointment"
  doctrine_clerical_succession_temporal_appointment_name:0 "Temporal, Revocable"
@@ -730,8 +745,9 @@
  doctrine_parameter_clerical_appointment_fixed:0 "The [realm_priest|E] or [court_chaplain|E] have their seat for life"
 
  unreformed_faith_doctrine_name:0 "Unreformed"
+ unreformed_faith_name:0 "$unreformed_faith_doctrine_name$"
  unreformed_faith_doctrine_desc:1 "An Unreformed Faith lacks an organized clergy and established canonical doctrines; different communities can nominally follow the same faith while having wildly different religious practices and beliefs."
- doctrine_parameter_unreformed:0 "Prevents Tribal [rulers|E] from changing [government|E] type"
+ doctrine_parameter_unreformed:1 "Prevents Tribal [rulers|E] from changing [government|E] type \n$EFFECT_LIST_BULLET$Grants the [unreformed_pagan_combat_bonus|E]"
  doctrine_parameter_hostility_override_tenet_unreformed_syncretism:1 "Non-Pagan [faiths|E] with the $tenet_unreformed_syncretism_name$ tenet are considered [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
  
  heresy_hostility_name:0 "View on Heresy"
@@ -744,14 +760,17 @@
  doctrine_parameter_divine_destiny_holy_war_cost_reduction:0 "Holy War [piety|e] Cost: #P -50%#!"
  
  special_doctrine_is_christian_faith_name:0 "Teachings of Jesus"
+ is_christian_faith_name:0 "$special_doctrine_is_christian_faith_name$"
  special_doctrine_is_christian_faith_desc:0 "There are those in the world who adhere to the teachings of Jesus without acknowledging his divinity. Though blasphemous, we should still show compassion to these misguided souls, as they may one day become converts to the true faith."
  doctrine_parameter_hostility_override_tenet_christian_syncretism:2 "Non-Christian [faiths|E] with the $tenet_christian_syncretism_name$ tenet are considered [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
 
  special_doctrine_is_islamic_faith_name:0 "Teachings of the Prophet"
+ is_islamic_faith_name:0 "$special_doctrine_is_islamic_faith_name$"
  special_doctrine_is_islamic_faith_desc:0 "Although they do not follow all of the laws of the Prophet, there are some in this world who are more guided by the will of Allah than they know. With time, these half-converts may even give up their evil ways and become true members of the Ummah!"
  doctrine_parameter_hostility_override_tenet_islamic_syncretism:2 "Non-Islamic [faiths|E] with the $tenet_islamic_syncretism_name$ tenet are considered [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
 
  special_doctrine_is_jewish_faith_name:0 "Teachings of Moses"
+ is_jewish_faith_name:0 "$special_doctrine_is_jewish_faith_name$"
  special_doctrine_is_jewish_faith_desc:0 "Not all among the gentility dwell in sin. There are those who respect God's chosen people, and these deserve a measure of our respect in turn."
  doctrine_parameter_hostility_override_tenet_jewish_syncretism:2 "Non-Jewish [faiths|E] with the $tenet_jewish_syncretism_name$ tenet are considered [GetHostilityLevelName( FAITH_DOCTRINE_PARAMETER.GetIntValue )|V] instead of $hostility_evil_tooltippable$"
 
@@ -831,3 +850,9 @@
  religionname_watergod_sheheit:0 "#D she/he/it#!"
  religionname_watergod_herhisits:0 "#D her/his/its#!"
  religionname_watergod_herhim:0 "#D her/him#!"
+ 
+ take_vows_active_name:0 "Take Vows decision"
+ hostility_righteous_tooltippable:0 "[GetHostilityLevelName( '(int32)0' )|V]"
+ hostility_astray_tooltippable:0 "[GetHostilityLevelName( '(int32)1' )|V]"
+ hostility_hostile_tooltippable:0 "[GetHostilityLevelName( '(int32)2' )|V]"
+ hostility_evil_tooltippable:0 "[GetHostilityLevelName( '(int32)3' )|V]"
